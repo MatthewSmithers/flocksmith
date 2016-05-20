@@ -10,6 +10,7 @@ class Breed extends Model
 	protected $fillable = [
 			'breed',
 			'year_admitted',
+			'poultry_type_id',
 		];
 
 	/**
@@ -32,15 +33,13 @@ class Breed extends Model
 	$breeds = [
 		'African',
 		'Ameraucanas',
-		'Bantams',
-		'Buff',
-		'Games',
 		'Anconas',
 		'Andalusians',
 		'Araucanas',
 		'Aseels',
 		'Australorps',
 		'Aylesbury',
+		'Bantams',
 		'Barnevelders',
 		'Belgian Bearded d\'Anvers',
 		'Belgian Bearded d\'Uccle',
@@ -69,6 +68,7 @@ class Breed extends Model
 		'Egyptian',
 		'Embden',
 		'Faverolles',
+		'Games',
 		'Japanese',
 		'Javas',
 		'Jersey Giants',

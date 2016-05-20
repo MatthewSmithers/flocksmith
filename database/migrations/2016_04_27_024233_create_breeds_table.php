@@ -12,14 +12,18 @@ class CreateBreedsTable extends Migration
      */
     public function up()
     {
-        Schema::create('breeds', function (Blueprint $table) {
+        Schema::create('breeds', function ($table) {
             $table->increments('id');
-            $table->integer('poultry_type_id')->unsigned();
-            $table->foreign('poultry_type_id')->references('id')->on('poultry_types')->onDelete('cascade');
             $table->string('breed');
             $table->string('history');
             $table->timestamps();
         });
+
+        Schema::table('breeds', function (Blueprint $table){
+            $table->integer('poultry_type_id')->unsigned();
+            $table->foreign('poultry_type_id')->references('id')->on('poultry_types')->onDelete('cascade');
+        });
+        
     }
 
     /**

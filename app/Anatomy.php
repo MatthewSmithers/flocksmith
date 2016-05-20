@@ -10,6 +10,7 @@ class Anatomy extends Model
 			'nomenclature',
 		];
 
+
 	$anatomy = [
 		'Abdomen',
 		'Back',
