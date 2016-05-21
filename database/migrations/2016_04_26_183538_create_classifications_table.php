@@ -14,8 +14,6 @@ class CreateClassificationsTable extends Migration
     {
         Schema::create('classifications', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('poultry_type_id')->unsigned();
-            $table->foreign('poultry_type_id')->references('id')->on('poultry_types')->onDelete('cascade');
             $table->string('classification');
             $table->timestamps();
         });

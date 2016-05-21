@@ -16,6 +16,7 @@ class BreedsTableSeeder extends Seeder
         //delete breeds table records
          DB::table('breeds')->delete();
 
+
          //insert APA breed records
          DB::table('breeds')->insert(array(
              array('poultry_type_id'=>'6','breed'=>'African','history'=>'Zulu warrior geese'),
@@ -27,7 +28,6 @@ class BreedsTableSeeder extends Seeder
              array('poultry_type_id'=>'4','breed'=>'Aseel','history'=>'CSS Ninga'),
              array('poultry_type_id'=>'1','breed'=>'Australorp','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'1','breed'=>'Aylesbury','history'=>'Laravel Ninga'),
-             array('poultry_type_id'=>'1','breed'=>'Bantam','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'1','breed'=>'Barnevelder','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'1','breed'=>'Belgian Bearded d\'Anvers','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'6','breed'=>'Belgian Bearded d\'Uccle','history'=>'from Belgium with love'),
@@ -40,7 +40,7 @@ class BreedsTableSeeder extends Seeder
              array('poultry_type_id'=>'2','breed'=>'Campbell','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'1','breed'=>'Campine','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'6','breed'=>'Canada','history'=>'Laravel Ninga'),
-             array('poultry_type_id'=>'1','breed'=>'Catalina','history'=>'Laravel Ninga'),
+             array('poultry_type_id'=>'1','breed'=>'Catalana','history'=>'Laravel Ninga'),
              array('poultry_type_id'=>'2','breed'=>'Cayuga','history'=>'Zulu warrior geese'),
              array('poultry_type_id'=>'1','breed'=>'Chanticleer','history'=>'from south america'),
              array('poultry_type_id'=>'6','breed'=>'Chinese','history'=>'from puerto rico'),
