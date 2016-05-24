@@ -19,9 +19,9 @@ class ClassificationsTableSeeder extends Seeder
          //insert some classification records
          DB::table('classifications')->insert(array(
             array('classification' => 'American'),  // 1
-            array('classification' => 'Engish'),    // 2
-            array('classification' => 'Mediterranean'), // 3
-            array('classification' => 'Asiatic'),   // 4
+            array('classification' => 'Asiatic'),    // 2
+            array('classification' => 'English'), // 3
+            array('classification' => 'Mediterranean'),   // 4
             array('classification' => 'Continental-Northern European'), // 5
             array('classification' => 'Continental-Polish'),    // 6
             array('classification' => 'Continental-French'),    // 7

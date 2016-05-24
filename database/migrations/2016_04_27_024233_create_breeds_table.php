@@ -18,12 +18,6 @@ class CreateBreedsTable extends Migration
             $table->string('history');
             $table->timestamps();
         });
-
-        Schema::table('breeds', function (Blueprint $table){
-            $table->integer('poultry_type_id')->unsigned();
-            $table->foreign('poultry_type_id')->references('id')->on('poultry_types')->onDelete('cascade');
-        });
-        
     }
 
     /**
