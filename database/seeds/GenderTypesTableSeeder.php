@@ -17,10 +17,10 @@ class GenderTypesTableSeeder extends Seeder
          DB::table('gender_types')->delete();
 
          //insert some gender type records
-         DB::table('gender_types')->insert(array(
-            array('gender_type' => 'unknown'),
-            array('gender_type' => 'male'),
-            array('gender_type' => 'female')
-        ));
+         DB::table('gender_types')->insert([
+            ['gender_type' => 'unknown'],
+            ['gender_type' => 'male'],
+            ['gender_type' => 'female']
+        ]);
     }
 }

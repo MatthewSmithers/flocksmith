@@ -17,27 +17,29 @@ class ClassificationsTableSeeder extends Seeder
          DB::table('classifications')->delete();
 
          //insert some classification records
-         DB::table('classifications')->insert(array(
-            array('classification' => 'American'),  // 1
-            array('classification' => 'Asiatic'),    // 2
-            array('classification' => 'English'), // 3
-            array('classification' => 'Mediterranean'),   // 4
-            array('classification' => 'Continental-Northern European'), // 5
-            array('classification' => 'Continental-Polish'),    // 6
-            array('classification' => 'Continental-French'),    // 7
-            array('classification' => 'All Other Breeds-Games'),    // 8    
-            array('classification' => 'All Other Breeds-Orientals'),    // 9
-            array('classification' => 'All Other Breeds-Miscellaneous'),    // 10
-            array('classification' => 'Game Bantams'),  // 11
-            array('classification' => 'Single Comb Clean Legged Other Than Game Bantams'),  // 12
-            array('classification' => 'Rose Comb Clean Legged Bantams'),    // 13
-            array('classification' => 'All Other Combs Clean Legged Bantams'),  // 14
-            array('classification' => 'Feather Legged Bantams'),    // 15
-            array('classification' => 'Heavy Class'),   // 16
-            array('classification' => 'Medium Class'),  // 17
-            array('classification' => 'Light Class'),   // 18
-            array('classification' => 'Bantam Class'),  // 19
-            array('classification' => 'Turkey Class'),  // 20
-        ));
+         DB::table('classifications')->insert([
+
+            ['classification' => 'American'],  // 1
+            ['classification' => 'Asiatic'],    // 2
+            ['classification' => 'English'], // 3
+            ['classification' => 'Mediterranean'],   // 4
+            ['classification' => 'Continental-Northern European'], // 5
+            ['classification' => 'Continental-Polish'],    // 6
+            ['classification' => 'Continental-French'],    // 7
+            ['classification' => 'All Other Breeds-Games'],    // 8    
+            ['classification' => 'All Other Breeds-Orientals'],    // 9
+            ['classification' => 'All Other Breeds-Miscellaneous'],    // 10
+            ['classification' => 'Game Bantams'],  // 11
+            ['classification' => 'Single Comb Clean Legged Other Than Game Bantams'],  // 12
+            ['classification' => 'Rose Comb Clean Legged Bantams'],    // 13
+            ['classification' => 'All Other Combs Clean Legged Bantams'],  // 14
+            ['classification' => 'Feather Legged Bantams'],    // 15
+            ['classification' => 'Heavy Class'],   // 16
+            ['classification' => 'Medium Class'],  // 17
+            ['classification' => 'Light Class'],   // 18
+            ['classification' => 'Bantam Class'],  // 19
+            ['classification' => 'Turkey Class']  // 20
+            
+            ]);
     }
 }

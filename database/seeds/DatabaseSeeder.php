@@ -33,7 +33,8 @@ class DatabaseSeeder extends Seeder
 		$this->call(AnatomyTableSeeder::class);
 		$this->call(GenderTypesTableSeeder::class);
 		$this->call(BreedsTableSeeder::class);
-		$this->call(BreedClassificationTableSeeder::class);
+		$this->call(PoultryTableSeeder::class);
+		$this->call(ClassificationPoultryTableSeeder::class);
 
 		// supposed to only apply to a single connection and reset it's self
         // but I like to explicitly undo what I've done for clarity

@@ -18,14 +18,13 @@ class PoultryTypesTableSeeder extends Seeder
          DB::table('poultry_types')->delete();
 
          //insert some dummy records
-         DB::table('poultry_types')->insert(array(
-            array('poultry_type' => 'Chicken'),
-            array('poultry_type' => 'Duck'),
-            array('poultry_type' => 'Goose'),
-            array('poultry_type' => 'Turkey'),
-            array('poultry_type' => 'Guinea'),
-            array('poultry_type' => 'Game'),
-            
-        ));
+         DB::table('poultry_types')->insert([
+            ['poultry_type' => 'Chicken'],
+            ['poultry_type' => 'Duck'],
+            ['poultry_type' => 'Goose'],
+            ['poultry_type' => 'Turkey'],
+            ['poultry_type' => 'Guinea'],
+            ['poultry_type' => 'Game']    
+        ]);
     }
 }

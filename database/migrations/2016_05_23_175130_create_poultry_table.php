@@ -16,16 +16,11 @@ class CreatePoultryTable extends Migration
             $table->increments('id');
             $table->integer('poultry_type_id')->unsigned()->index();
             $table->foreign('poultry_type_id')->references('id')->on('poultry_types')->onDelete('cascade');
-            $table->integer('classification_id')->unsigned()->index();
-            $table->foreign('classification_id')->references('id')->on('classifications')->onDelete('cascade');
             $table->integer('variety_id')->unsigned()->index();
             $table->foreign('variety_id')->references('id')->on('varieties')->onDelete('cascade');
             $table->integer('breed_id')->unsigned()->index();
             $table->foreign('breed_id')->references('id')->on('breeds')->onDelete('cascade');
-            $table->integer('year_admitted');
             $table->text('description');
-            $table->text('economic_qualities');
-            $table->text('disqualifications');
             $table->timestamps();
         });
     }
